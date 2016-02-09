@@ -31,6 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'sass', '3.2.19'
 
+gem 'bower-rails'
+
 group :development, :test do
   gem 'pry-byebug'
 
