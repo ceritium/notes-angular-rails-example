@@ -32,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sass', '3.2.19'
 
 gem 'bower-rails'
+gem 'angular-rails-templates', '1.0.0.beta2'
 
 group :development, :test do
   gem 'pry-byebug'
