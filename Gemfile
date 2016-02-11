@@ -33,6 +33,7 @@ gem 'sass', '3.2.19'
 
 gem 'bower-rails'
 gem 'angular-rails-templates', '1.0.0.beta2'
+gem 'angular_rails_csrf'
 
 group :development, :test do
   gem 'pry-byebug'

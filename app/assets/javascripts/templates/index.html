@@ -1,11 +1,13 @@
 <div class="col-md-6 col-md-offset-3">
   <h1> TODO </h1>
-  <input ng-model="text" class="form-control" type="text" placeholder="Write something" autofocus="true">
+  <form ng-submit="create()" action>
+    <input ng-model="noteTitle" class="form-control" type="text" placeholder="Write something" autofocus="true">
+  </form>
   <ul class="list-group">
     <li ng-repeat="note in notes" class="list-group-item"> {{ note.title }}
       <div class="pull-right">
         <button class="btn btn-xs btn-success">Edit</button>
-        <button class="btn btn-xs btn-danger">Delete</button>
+        <button ng-click="destroy(note.id)" class="btn btn-xs btn-danger">Delete</button>
       </div>
     </li>
   </ul>
